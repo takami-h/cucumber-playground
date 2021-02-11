@@ -1,12 +1,12 @@
-Feature: Is it Friday yet?
+フィーチャ: Is it Friday yet?
   Everybody wants to know when it's Friday
 
-  Scenario Outline: Today is or is not Friday
-    Given today is "<day>"
-    When I ask whether it's Friday yet
-    Then I should be told "<answer>"
+  シナリオテンプレート: Today is or is not Friday
+    前提 today is "<day>"
+    もし I ask whether it's Friday yet
+    ならば I should be told "<answer>"
 
-  Examples:
+  サンプル:
     | day             | answer |
     | Friday          | TGIF   |
     | Sunday          | Nope   |
